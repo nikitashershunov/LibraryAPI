@@ -1,4 +1,4 @@
-module nikitashershunov.books
+module github.com/nikitashershunov/LibraryAPI
 
 go 1.22.2
 

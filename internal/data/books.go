@@ -7,9 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"nikitashershunov.books/internal/validator"
-
 	"github.com/lib/pq"
+	"github.com/nikitashershunov/LibraryAPI/internal/validator"
 )
 
 // Book type whose fields describe the book.

@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"nikitashershunov.books/internal/data"
-	"nikitashershunov.books/internal/validator"
+	"github.com/nikitashershunov/LibraryAPI/internal/data"
+	"github.com/nikitashershunov/LibraryAPI/internal/validator"
 )
 
 // getBookHandler handles the "GET /v1/books/:id" endpoint and returns a JSON response of the

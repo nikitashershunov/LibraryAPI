@@ -7,10 +7,9 @@ import (
 	"os"
 	"time"
 
-	"nikitashershunov.books/internal/data"
-	"nikitashershunov.books/internal/jsonlog"
-
 	_ "github.com/lib/pq"
+	"github.com/nikitashershunov/LibraryAPI/internal/data"
+	"github.com/nikitashershunov/LibraryAPI/internal/jsonlog"
 )
 
 // define config struct.

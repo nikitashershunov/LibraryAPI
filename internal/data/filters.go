@@ -4,7 +4,7 @@ import (
 	"math"
 	"strings"
 
-	"nikitashershunov.books/internal/validator"
+	"github.com/nikitashershunov/LibraryAPI/internal/validator"
 )
 
 type Filters struct {

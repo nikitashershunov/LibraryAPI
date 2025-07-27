@@ -10,9 +10,8 @@ import (
 	"strconv"
 	"strings"
 
-	"nikitashershunov.books/internal/validator"
-
 	"github.com/julienschmidt/httprouter"
+	"github.com/nikitashershunov/LibraryAPI/internal/validator"
 )
 
 // define an wrapper type.
