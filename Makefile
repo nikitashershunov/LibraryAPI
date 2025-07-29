@@ -13,6 +13,11 @@ confirm:
 run/api:
 	@go run ./cmd/api
 
+## test: test the server of application
+.PHONY: test
+test:
+	@go test ./cmd/api
+
 ## db/psql: connect to the database using psql
 .PHONY: db/psql
 db/psql:
