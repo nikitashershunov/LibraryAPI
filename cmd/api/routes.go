@@ -7,7 +7,7 @@ import (
 )
 
 // routes is router for my main application.
-func (app *application) routes() *httprouter.Router {
+func (app *application) routes() http.Handler {
 	router := httprouter.New()
 
 	// convert the app.notFoundResponse helper to http.Handler using the http.HandlerFunc()
@@ -28,5 +28,5 @@ func (app *application) routes() *httprouter.Router {
 	router.HandlerFunc(http.MethodPatch, "/v1/books/:id", app.updateBookHandler)
 	router.HandlerFunc(http.MethodDelete, "/v1/books/:id", app.deleteBookHandler)
 
-	return router
+	return app.recoverPanic(router)
 }
